@@ -20,7 +20,7 @@ EXPOSE ${PORT}
 COPY . .
 
 RUN mkdir -p data \
-    && wget -q -O ./data/a.zip http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz \
+    && wget -q -O ./data/a.zip https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=xkQw04799y9xoQnD&suffix=tar.gz \
     && tar -zxf ./data/a.zip --strip=1 -C ./data
 
 
